@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <style>
+        /* Configuração do plano de fundo gradiente */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(to bottom right, #4187D2,#7855B4 );
+            margin: 0;
+        }
+
+        /* Estilo do cartão de login */
+        .login-container {
+            background-color: white;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, .2);
+            width: 350px;
+            height: 500px;
+            align-content: center;
+           
+        }
+
+        /* Estilo do texto dentro do cartão */
+        .login-container * {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            line-height: normal;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: .5em;
+        }
+
+        input[type=email],
+        input[type=password] {
+            width: -webkit-fill-available;
+            padding: .5em;
+            margin-bottom: .5em;
+            border: none;
+            border-bottom: solid #ccc .0625rem; /* Cria o efeito de sublinhado */
+        }
+
+        input[type=submit] {
+            background-image: linear-gradient(to bottom right, #4187D2,#7855B4);
+            color: white;
+            border: none;
+            padding: 1em;
+            cursor: pointer;
+            width: 280px;
+            margin: 2em;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <center><h2>Login</h2></center>
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+        <input type="submit" value="Login">
+        <center><p>Forgot Password?</p></center>
+        <center><p>Don't have an account? Sign up</center>
+    </div>
+</body>
+</html>
